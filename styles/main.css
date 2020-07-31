@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header {
+  background: #33363b;
+  text-align: center;
+}
+
+.site-header__title {
+  font-family: 'Play', sans-serif;
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  padding-bottom: 3px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .site-header__title {
+    font-size: 2.1875rem;
+  }
+}
+
+.wrapper {
+  max-width: 1024px;
+  width: 95%;
+}
+/*# sourceMappingURL=main.css.map */
