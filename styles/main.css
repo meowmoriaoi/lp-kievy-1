@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+body {
+  background: #f2f2f2;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -24,7 +28,7 @@
   padding-bottom: 3px;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .site-header__title {
     font-size: 2.1875rem;
   }
@@ -33,5 +37,32 @@
 .wrapper {
   max-width: 1024px;
   width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.photo-big {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #dee2e6;
+  border-radius: 3px;
+}
+
+@media (min-width: 576px) {
+  .photo-big {
+    width: 43%;
+  }
+}
+
+.photo-big img {
+  display: block;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
