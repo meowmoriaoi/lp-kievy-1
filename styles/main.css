@@ -18,12 +18,17 @@ body {
   margin-top: 20px;
 }
 
-.site-header, .product-page__specification p {
+.site-header, .wrapper, .product-page__specification p {
   margin-bottom: 10px;
 }
 
 .product-page__heading, .product-page__description {
   margin-bottom: 20px;
+}
+
+.wrapper, .feature {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 b, .product-page__title, .product-page__heading {
@@ -61,8 +66,6 @@ p {
 .wrapper {
   max-width: 1024px;
   width: 95%;
-  margin-left: auto;
-  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,7 +218,7 @@ p {
   margin-bottom: 0px;
 }
 
-.button {
+.product-page__cta {
   font-family: inherit;
   margin-top: 30px;
   width: 100%;
@@ -229,5 +232,84 @@ p {
   letter-spacing: 1px;
   font-weight: 600;
   cursor: pointer;
+}
+
+.share {
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid #dadada;
+  border-top: none;
+  padding-top: 20px;
+}
+
+.share__heading {
+  text-align: center;
+  color: #212529;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.share__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.share__box span {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 25%;
+  text-align: center;
+  padding: 5px;
+  border-top: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+}
+
+.share__box span:last-child {
+  border-right: none;
+}
+
+.share__box span:hover {
+  background-color: #dadada;
+}
+
+.feature {
+  max-width: 1024px;
+  width: 95%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 10px;
+  border: 1px solid #dadada;
+  padding: 20px 15px;
+}
+
+.feature-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.feature-item:last-child {
+  margin-bottom: 0;
+}
+
+.feature-item h3 {
+  color: #212529;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.7px;
+  margin: 20px 0;
 }
 /*# sourceMappingURL=main.css.map */

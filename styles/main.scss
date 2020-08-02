@@ -32,10 +32,10 @@ b {
 }
 
 .wrapper {
+    @extend %margin-bottom-10;
+    @extend %margin-x-auto;
     max-width: 1024px;
     width: 95%;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
 
@@ -178,20 +178,90 @@ b {
             }
         }
     }
+
+    &__cta {
+        font-family: inherit;
+        margin-top: 30px;
+        width: 100%;
+        border-radius: 3px;
+        background-color: #fa591d;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 10px 0px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+        cursor: pointer;
+    }
 }
 
-.button {
-    font-family: inherit;
-    margin-top: 30px;
+.share {
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #dadada;
+    border-top: none;
+    padding-top: 20px;
+
+    &__heading {
+        text-align: center;
+        color: #212529;
+        font-size: 15px;
+        line-height: 30px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+
+        span {
+            flex: 0 0 auto;
+            width: (100% / 4);
+            text-align: center;
+            padding: 5px;
+            border-top: 1px solid #dadada;
+            border-right: 1px solid #dadada;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            &:hover {
+                background-color: #dadada;
+            }
+        }
+    }
+}
+
+.feature {
+    @extend %margin-x-auto;
+    max-width: 1024px;
+    width: 95%;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: 1px solid #dadada;
+    padding: 20px 15px;
+}
+
+.feature-item {
+    flex: 0 0 auto;
     width: 100%;
-    border-radius: 3px;
-    background-color: #fa591d;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 10px 0px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-    cursor: pointer;
+    text-align: center;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    h3 {
+        color: #212529;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.7px;
+        margin: 20px 0;
+    }
 }
