@@ -17,6 +17,10 @@ b {
     background: #33363b;
     text-align: center;
 
+    @media (min-width:768px) {
+        margin-bottom: 20px;
+    }
+
     &__title {
         font-family: 'Play', sans-serif;
         font-size: calc(1.375rem + 1.5vw);
@@ -32,16 +36,12 @@ b {
 }
 
 .wrapper {
-    @extend %margin-bottom-10;
+    @extend %margin-bottom-20;
     @extend %margin-x-auto;
     max-width: 1024px;
     width: 95%;
     display: flex;
     flex-wrap: wrap;
-
-    @media (min-width:768px) {
-        margin-top: 20px;
-    }
 }
 
 .product-photo {
@@ -237,6 +237,7 @@ b {
 
 .feature {
     @extend %margin-x-auto;
+    @extend %margin-bottom-20;
     max-width: 1024px;
     width: 95%;
     background: #fff;
@@ -257,11 +258,131 @@ b {
         margin-bottom: 0;
     }
 
+    @media (min-width:768px) {
+        width: (100% / 3);
+        margin-bottom: 0;
+        padding: 10px;
+    }
+
     h3 {
         color: #212529;
         font-size: 18px;
         line-height: 30px;
         letter-spacing: 0.7px;
         margin: 20px 0;
+    }
+}
+
+.footer {
+    background: #fff;
+}
+
+.socmed {
+    @extend %margin-bottom-30;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+
+    &__box {
+        @extend %margin-x-auto;
+        max-width: 1024px;
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px 0;
+
+        a {
+            margin-left: 10px;
+        }
+    }
+}
+
+.info {
+    @extend %margin-x-auto;
+    max-width: 1024px;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+
+    &__shipment,
+    &__about,
+    &__payment {
+        flex: 0 0 auto;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    &__payment,
+    &__shipment {
+        @media (min-width:768px) {
+            width: 30%;
+        }
+
+        h3 {
+            @extend %margin-bottom-20;
+        }
+    }
+
+    &__about {
+        @media (min-width:768px) {
+            width: 40%;
+            order: 2;
+        }
+
+        h3 {
+            margin: 20px 0;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__shipment {
+        @media (min-width:768px) {
+            order: 3;
+        }
+    }
+
+    &__payment {
+        @media (min-width:768px) {
+            order: 1;
+        }
+    }
+
+    div {
+        @extend %margin-bottom-20;
+
+        @media (min-width:768px) {
+            padding: 10px;
+        }
+    }
+
+    span {
+        display: inline-block;
+        width: 72px;
+        margin: 3px 2px;
+        border-radius: 2px;
+        padding: 3px;
+        border: 1px solid #dadada;
+    }
+
+    img {
+        display: block;
+        width: 100%
+    }
+}
+
+.copyright {
+    background: #fff;
+    border-top: 1px solid #dadada;
+
+    &__box {
+        @extend %margin-x-auto;
+        max-width: 1024px;
+        width: 95%;
+        padding: 20px 0;
     }
 }
